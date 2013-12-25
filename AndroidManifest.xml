@@ -8,7 +8,7 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
-    // Copy dari tag <application></application>
+    //Copy dari tag application
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
