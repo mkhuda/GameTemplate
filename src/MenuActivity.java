@@ -38,7 +38,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.buttonPlay:
 			Intent i = new Intent(MenuActivity.this, GameActivityOne.class);
-	        startActivity(i);
+	        	startActivity(i);
 			break;
 		case R.id.buttonExit:
 			finish();
