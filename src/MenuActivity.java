@@ -7,18 +7,19 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MenuActivity extends Activity implements OnClickListener {
 	
-	Button playButton, exitButton;
+	ImageView playButton, exitButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
 		
-		playButton = (Button) findViewById(R.id.buttonPlay);
-		exitButton = (Button) findViewById(R.id.buttonExit);
+		ImageView playButton = (ImageView) findViewById(R.id.buttonPlay);
+		ImageView exitButton = (ImageView) findViewById(R.id.buttonExit);
 		
 		playButton.setOnClickListener(this);
 		exitButton.setOnClickListener(this);
@@ -40,7 +41,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 	        startActivity(i);
 			break;
 		case R.id.buttonExit:
-			MenuActivity.this.finish();
+			finish();
 			break;
 		}
 		
